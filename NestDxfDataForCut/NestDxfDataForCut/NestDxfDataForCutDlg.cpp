@@ -5,6 +5,7 @@
 #include "stdafx.h"
 #include "NestDxfDataForCut.h"
 #include "NestDxfDataForCutDlg.h"
+#include "GeomForCut.h"
 #include "afxdialogex.h"
 
 #ifdef _DEBUG
@@ -51,6 +52,7 @@ CNestDxfDataForCutDlg::CNestDxfDataForCutDlg(CWnd* pParent /*=NULL*/)
 	: CDialogEx(CNestDxfDataForCutDlg::IDD, pParent)
 {
 	m_hIcon = AfxGetApp()->LoadIcon(IDR_MAINFRAME);
+	
 }
 
 void CNestDxfDataForCutDlg::DoDataExchange(CDataExchange* pDX)
@@ -148,5 +150,9 @@ void CNestDxfDataForCutDlg::OnPaint()
 HCURSOR CNestDxfDataForCutDlg::OnQueryDragIcon()
 {
 	return static_cast<HCURSOR>(m_hIcon);
+}
+void CNestDxfDataForCutDlg::add()
+{
+	
 }
 
