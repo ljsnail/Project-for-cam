@@ -151,8 +151,5 @@ HCURSOR CNestDxfDataForCutDlg::OnQueryDragIcon()
 {
 	return static_cast<HCURSOR>(m_hIcon);
 }
-void CNestDxfDataForCutDlg::add()
-{
-	
-}
+
 
